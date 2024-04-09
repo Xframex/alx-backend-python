@@ -144,7 +144,7 @@ class TestIntegrationGithubOrgClient(unittest.TestCase):
         cls.get_patcher.start()
 
     def test_public_repos(self) -> None:
-        """Tests the `public_repos` method."""
+        """Tests repo `public_repos` method."""
         self.assertEqual(
             GithubOrgClient("google").public_repos(),
             self.expected_repos,
